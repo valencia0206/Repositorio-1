@@ -3,92 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1><font size=20 color=red face= arial>PRACTICA HTML</font></h1>
-    <HR>
-    <H2><font size=25 color=YELLOW face=VERDANA>LUNES</font></H2>
-    <BR>
-    <H3>MARTES</H3>
-    <BR>
-    <H4>MIERCOLES</H4>
-    <BR>
-    <H5>JUEVES</H5>
-    <BR>
-    <H6>VIERNES</H6>
-    <BR>
-    <HR>
-    <img src="IMAGEN" width="50%">
-    <hr>
-    <style type="text/css">
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0 ;
-            padding: 20px;
-        }
-        .container{
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;     
-            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-          }
-          h1{
-            text-align: center;
-            color: #333;
-          }
-          label{
-            display: block;
-            margin: 10PX 0 5px;
-            font-weight:bold ;
-          }
-          input, textarea, select{
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #CCC;
-            border-radius: 4PX;
-          }
-          input[type="submit"]{
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            cursor: pointer;
-          }
-          input [type="submit"]:hover{
-             background-color: greenyellow;
-          }
-              </style>
-</head>
-<body>
+    <title>tabla y listas</title>
+<style type="text/css">
 
-  <div class="container">
-    <h1>FORMULARIO DE CONTACTO</h1>
-    <form action="#" method="post">
-      <label for="Nombre">Nombre:  </label>
-      <input type="text" id="nombre" name="nombre" required>
-      <label for="email"> Correo Electronico  </label>
-      <input type="email" id="email" name="email" required>
-      <label for="telefono">Telefono: </label>
-      <input type="tel" id="telefono" name="telefono" required>
-      <label for="mensaje">mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-      <label for="pais">pais: </label>
-      <select name="pais" id="pais" required>
-      <option value ="disabled selected">selecciona tu pais</option>
-      <option value="es">españa</option>
-      <option value="co">colombia</option>
-       <option value="mx">mexico</option>
-       <option value="ar">argentina</option>
-      </select>
-<input type="submit" value="enviar">
-      </FORM>
-    </div>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+         margin: 20px;
+         background-color: #c6bfe0;
+    }
+h1{
+    color: rgb(168, 42, 218);
+    text-align: center;
+}
+h2{
+    color: rgb(113, 104, 187);
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+ul{
+    list-style-type: disc;
+    margin-left: 18px;
+}
+table{
+            background-color: rgb(169, 169, 169);
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 6px solid #000000
+        }                                                                                                        
+        th{
+            background-color: #97ddce;
+            text-align: center;
+            border: 2px solid #000000
+            
+        }
+        td{
+            text-align: center;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: #000000;
+        }
+        footer{
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <header title="listas y tablas">
+        <h1>Bienvenidos al aprendizaje de listas y tablas</h1>
+        <nav>
+            <ul>
+                <li> <a href=" #inicio"> inicio </a></li>
+                <li> <a href=" #acerca de">acerca de </a></li>
+                <li> <a href=" #contacto">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="listas">
+        <h1>listas y tablas en html </h1>
+        <h2>listas de redes sociales</h2>
+        <ul>
+
+            <li>INSTAGRAM</li>
+            <LI>FACEBOOK</LI>
+            <LI>TWITTER (x)</LI>
+        </ul>
+        <section id="acerca">
+            <h2>tabla de redes sociales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Imagen </th>
+                        <th>Nombre red social</th>
+                        <th>Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <th><img src="imagenes/instagram.jpg " width="30%"></th>
+                       <th>INSTAGRAM</th>
+                       <th>
+
+               <p align="justify">
+                Instagram es una red social principalmente visual, donde un usuario puede publicar fotos y videos de corta duración, aplicarles efectos y también interactuar con las publicaciones de otras personas, a través de comentarios y me gusta
+               </p>
+            </tr>
+        </tr>
+        <tr>
+            <th><img src="imagenes/facebook.png" width="30%"></th>
+            <th>FACEBOOK</th>
+            <Th>
+                <P align="justify">
+                    Facebook es una red social que permite a los usuarios conectarse, compartir información y comunicarse con amigos, familiares y otros.
+                </P>
+              </th>
+        </tr>
+        <tr>
+            <th><img src="imagenes/twitter.png" width="30%"></th>
+            <th>TWITTER</th>
+            <th>
+                <P align= "justify"> una red social gratuita que permite a los usuarios compartir opiniones y mantenerse conectados mediante publicaciones cortas, llamadas "tweets".
+                </P>
+
+            </th>
     
-</body>
-    <footer>&copy;KELLY VALENCIA 2025 - TALENTO TEACH </footer>
+                </tbody>
+            </table>
+        </section>
+<footer>
+    <p>
+        &copy; Autor: kelly jhoana landazuri valencia - mi primeras tabla con listas 
+    </p>
+</footer>
+</section>
+
+
+
+
+        
 </body>
 </html>
