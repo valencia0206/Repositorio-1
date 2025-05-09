@@ -14,7 +14,7 @@
 h1{
     color: rgb(168, 42, 218);
     text-align: center;
-}
+} 
 h2{
     color: rgb(113, 104, 187);
 }
@@ -55,6 +55,45 @@ table{
         footer{
             text-align: center;
         }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0 ;
+            padding: 20px;
+        }
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;     
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+          }
+          h1{
+            text-align: center;
+            color: #333;
+          }
+          label{
+            display: block;
+            margin: 10PX 0 5px;
+            font-weight:bold ;
+          }
+          input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #CCC;
+            border-radius: 4PX;
+          }
+          input[type="submit"]{
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+          }
+          input [type="submit"]:hover{
+             background-color: greenyellow;
+          } 
         </style>
 </head>
 <body>
@@ -119,6 +158,32 @@ table{
                 </tbody>
             </table>
         </section>
+
+        <hr>
+
+         <div class="container">
+    <h1>FORMULARIO DE CONTACTO</h1>
+    <form action="#" method="post">
+      <label for="Nombre">Nombre:  </label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="email"> Correo Electronico  </label>
+      <input type="email" id="email" name="email" required>
+      <label for="telefono">Telefono: </label>
+      <input type="tel" id="telefono" name="telefono" required>
+      <label for="mensaje">mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <label for="pais">pais: </label>
+      <select name="pais" id="pais" required>
+      <option value ="disabled selected">selecciona tu pais</option>
+      <option value="es">españa</option>
+      <option value="co">colombia</option>
+       <option value="mx">mexico</option>
+       <option value="ar">argentina</option>
+      </select>
+<input type="submit" value="enviar">
+      </FORM>
+    </div>
+    
 <footer>
     <p>
         &copy; Autor: kelly jhoana landazuri valencia - mi primeras tabla con listas 
